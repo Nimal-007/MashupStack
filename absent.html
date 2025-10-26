@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Featured Blog Section</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+
+  .blog-section {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .blog-post {
+    width: 30%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .blog-post img[src$=".jpg"] {
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .blog-post h3 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  .blog-post a[href^="https"] {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .blog-post a:hover {
+    text-decoration: underline;
+  }
+  @media (max-width: 600px) {
+    .blog-section {
+      flex-direction: column;
+      align-items: center;
+    }
+    .blog-post {
+      width: 90%;
+      font-size: 0.9rem;
+    }
+  }
+  @media (orientation: portrait) {
+    .blog-section {
+      background-color: lightyellow;
+    }
+  }
+</style>
+</head>
+<body>
+
+<section class="blog-section">
+  <div class="blog-post">
+    <img src="https://images.pexels.com/photos/1172064/pexels-photo-1172064.jpeg?cs=srgb&dl=pexels-freestockpro-1172064.jpg&fm=jpg" alt="Nature Blog" width="100" height="50">
+    <h3>Exploring Nature’s Beauty</h3>
+    <p>Discover how to connect with the natural world through travel and photography.</p>
+    <a href="https://www.tncindia.in/">Read More</a>
+  </div>
+
+  <div class="blog-post">
+    <img src="https://img.freepik.com/free-vector/realistic-technology-background_52683-73672.jpg?semt=ais_hybrid&w=740&q=80" alt="Tech Blog" width="100" height="50">
+    <h3>Future of AI Technology</h3>
+    <p>Learn about the latest breakthroughs shaping artificial intelligence.</p>
+    <a href="https://www.ibm.com/think/topics/artificial-intelligence">Read More</a>
+  </div>
+
+  <div class="blog-post">
+    <img src="https://media.istockphoto.com/id/1457433817/photo/group-of-healthy-food-for-flexitarian-diet.jpg?s=612x612&w=0&k=20&c=v48RE0ZNWpMZOlSp13KdF1yFDmidorO2pZTu2Idmd3M=" alt="Food Blog" width="100" height="50">
+    <h3>Healthy Eating Habits</h3>
+    <p>Simple tips for maintaining a balanced diet with tasty recipes.</p>
+    <a href="https://www.healthyfood.com/">Read More</a>
+  </div>
+</section>
+
+</body>
+</html>

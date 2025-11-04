@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Feedback Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+    <div class="from-group">
+        <label for="email">Email:</label>
+        <input type="email" class="from-control" id="email" placeholder="Enter your email">
+    </div>
+    <div class="from-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="from-control" id="pwd" placeholder="Enter Password">
+    </div>
+    <div class="from-group">
+        <label for="feedback">Feedback:</label>
+        <textarea class="from-control" rows="3" id="feedback" placeholder="Enter your feedback"></textarea>
+    </div>
+    <div class="dropdown">
+        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">How you Know about us..?</button>
+            <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Social Media</a>
+            <a class="dropdown-item" href="#">Friend</a>
+            <a class="dropdown-item" href="#">Advertisement</a>
+    </div>
+    </div>
+    <div class="form-check-inline">
+        <label class="form-check-label">
+            <input type="radio" class="form-check-input">Excellent
+        </label>
+        </div>
+    <div class="form-check-inline">
+        <label class="form-check-label">
+            <input type="radio" class="form-check-input">Good
+        </label>
+        </div>
+    <div class="form-check-inline">
+        <label class="form-check-label">
+            <input type="radio" class="form-check-input"> Moderate
+        </label>
+        </div>
+    <div class="form-check-inline">
+        <label class="form-check-label">
+            <input type="radio" class="form-check-input"> Poor
+        </label>
+        </div>
+    <div class="form-check-inline">
+        <label class="form-check-label">
+            <input type="radio" class="form-check-input"> Very Poor
+        </label>
+        </div>
+    <br><br>
+    <button type="submit" class="btn btn-secondary">Submit</button>
+    </div>
+</body>
+</html>

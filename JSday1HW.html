@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+<script>
+
+let rice = "Rice";
+let sugar = "Sugar";
+let wheat = "Wheat";
+let ricePrice = 60; 
+let sugarPrice = 50;
+let wheatPrice = 40;
+let riceQty = 2; 
+let sugarQty = 1;
+let wheatQty = 3;
+let riceCost = ricePrice * riceQty;
+let sugarCost = sugarPrice * sugarQty;
+let wheatCost = wheatPrice * wheatQty;
+console.log("Cost of " + rice + " = ₹" + riceCost);
+console.log("Cost of " + sugar + " = ₹" + sugarCost);
+console.log("Cost of " + wheat + " = ₹" + wheatCost);
+let totalBill = riceCost + sugarCost + wheatCost;
+console.log("Total Bill = ₹" + totalBill);
+sugarQty = 2;
+sugarCost = sugarPrice * sugarQty;
+totalBill = riceCost + sugarCost + wheatCost;
+console.log("After changing sugar quantity:");
+console.log("New Cost of Sugar = ₹" + sugarCost);
+console.log("Updated Total Bill = ₹" + totalBill);
+</script>
+</body>
+</html>

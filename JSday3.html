@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+
+    var feedback = "   I loved the FOOD and the service!   ";
+    var cleanFeedback = feedback.trim();
+        cleanFeedback = cleanFeedback.toLowerCase();
+        cleanFeedback = cleanFeedback.replace("food", "ambience");
+    var position = cleanFeedback.indexOf("service");
+        console.log("Position of 'service':", position);
+    var wordsArray = cleanFeedback.split(" ");
+        console.log("Cleaned Feedback:", cleanFeedback);
+        console.log("Words Array:", wordsArray);
+</script>
+</body>
+</html>
